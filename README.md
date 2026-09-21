@@ -8,8 +8,7 @@ application source is maintained separately in `amuxos/amux`.
 
 ## Install
 
-Install and authenticate Codex, Claude, or Pi first. Once the first release is
-published, download the installer:
+Install and authenticate Codex, Claude, or Pi first, then download the installer:
 
 ```sh
 curl -fsSL https://github.com/amuxos/amux-releases/releases/latest/download/install.sh -o /tmp/amux-install.sh

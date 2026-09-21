@@ -7,7 +7,7 @@
 
 ## 安装
 
-先安装并登录 Codex、Claude 或 Pi。首个版本发布后，下载安装器：
+先安装并登录 Codex、Claude 或 Pi，再下载安装器：
 
 ```sh
 curl -fsSL https://github.com/amuxos/amux-releases/releases/latest/download/install.sh -o /tmp/amux-install.sh
