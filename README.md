@@ -22,6 +22,10 @@ the agent. Use `--version vX.Y.Z` to select a specific release.
 Supported packages: macOS (Apple Silicon and Intel), Linux (x86-64 and ARM64).
 Claude also requires Node.js 22 or newer.
 
+Local Expert authoring requires a separately configured Agent Pack Contract
+runtime, which is not included in these packages. Without it, installation and
+updates succeed with a warning that local Expert authoring is degraded.
+
 ## Update
 
 ```sh

@@ -21,6 +21,9 @@ bash /tmp/amux-install.sh --runtime codex
 支持 macOS（Apple Silicon 和 Intel）、Linux（x86-64 和 ARM64）。
 Claude 还需要 Node.js 22 或更新版本。
 
+本地 Expert 编写功能需要单独配置 Agent Pack Contract 运行时，当前发行包未包含
+该组件。未配置时，安装和更新仍会成功，但会提示本地 Expert 编写功能处于降级状态。
+
 ## 更新
 
 ```sh
