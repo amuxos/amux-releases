@@ -19,8 +19,26 @@ Use `--runtime claude` or `--runtime pi` to select another installed agent.
 Add `--feishu` for optional bot setup. Native agent credentials stay managed by
 the agent. Use `--version vX.Y.Z` to select a specific release.
 
-Supported packages: macOS (Apple Silicon and Intel), Linux (x86-64 and ARM64).
+Supported packages: macOS (Apple Silicon and Intel), Linux (x86-64 and ARM64),
+Windows (x86-64 via Setup.exe).
 Claude also requires Node.js 22 or newer.
+
+### Windows
+
+1. Install and authenticate Codex, Claude, or Pi first.
+2. Download `amux_<version>_windows_amd64.tar.gz` and extract it.
+3. From the extracted folder (Administrator), run:
+
+```text
+Setup.exe --runtime codex
+```
+
+Phase 1 Setup requires a successful Feishu (飞书) QR/browser bind and registers
+a Windows Service that starts the hub on boot. There is no App ID/Secret manual
+fallback in phase 1. You can also download the standalone
+`amux_<version>_windows_amd64_Setup.exe` asset; it must still sit next to the
+extracted `amux.exe` / `amuxd.exe` / `amuxlet.exe` siblings.
+
 
 Local Expert authoring requires a separately configured Agent Pack Contract
 runtime, which is not included in these packages. Without it, installation and
