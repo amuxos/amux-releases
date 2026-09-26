@@ -18,8 +18,23 @@ bash /tmp/amux-install.sh --runtime codex
 添加 `--feishu` 可配置飞书机器人。原生 Agent 自行管理其登录凭据。
 使用 `--version vX.Y.Z` 选择指定版本。
 
-支持 macOS（Apple Silicon 和 Intel）、Linux（x86-64 和 ARM64）。
+支持 macOS（Apple Silicon 和 Intel）、Linux（x86-64 和 ARM64）、Windows（x86-64，Setup.exe）。
 Claude 还需要 Node.js 22 或更新版本。
+
+### Windows
+
+1. 先安装并登录 Codex、Claude 或 Pi。
+2. 下载并解压 `amux_<version>_windows_amd64.tar.gz`。
+3. 在解压目录以管理员身份运行：
+
+```text
+Setup.exe --runtime codex
+```
+
+Phase 1 必须完成飞书扫码/浏览器授权，并注册开机自启的 Windows Service；
+不提供 App ID/Secret 手工回退。也可单独下载
+`amux_<version>_windows_amd64_Setup.exe`，但仍需与解压出的
+`amux.exe` / `amuxd.exe` / `amuxlet.exe` 放在同一目录。
 
 本地 Expert 编写功能需要单独配置 Agent Pack Contract 运行时，当前发行包未包含
 该组件。未配置时，安装和更新仍会成功，但会提示本地 Expert 编写功能处于降级状态。
